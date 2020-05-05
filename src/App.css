@@ -1,3 +1,9 @@
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.GameDiv{
+  margin-top: 200px;
+  max-width: 75%;
+  min-height: 800px;
+  margin:auto;
+  background-color: #bfbaba;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.GameGrid{
+  align-self:stretch;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+}
+
+.GameGrid img{
+  width:100%;
+  border-radius: 10px;
+}
+
+.MoleGrid{
+  
+  display: grid;
+  grid-template-columns: repeat(5,minmax(150px,1fr));
+  grid-template-rows: repeat(5,minmax(100px,1fr));
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  border-radius: 10px;
+}
+
+.MoleDiv{
+  background-color: darkcyan;
+  border-width: 5px;
+}
+
+.mole{
+  background-image: url("./game/WhackAMole/mole1.jpg");
+  background-size:cover;
 }
