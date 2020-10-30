@@ -4,6 +4,7 @@ import './App.css';
 import WhackAMole from "./game/WhackAMole/WhackAMole"
 
 function App() {
+  let name = "Ratan Hegde";
   return (
     // <FlipGame/>
     <WhackAMole/>
